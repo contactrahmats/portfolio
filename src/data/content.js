@@ -22,10 +22,10 @@ export const hero = {
   roleLine: 'Learning & Development Specialist · Instructional Designer · Trainer — 3+ years, Indonesia',
   ctas: [
     { label: 'View Work', href: '#case-studies', style: 'primary' },
-    { label: 'Résumé', href: 'https://drive.google.com/file/d/1num2E_NvG-rUbmPGooF1DOMQSQTTUdEn/view', style: 'amber', external: true },
+    { label: 'Resumé', href: 'https://drive.google.com/file/d/1-2igf2luJsMVtNlFo-W2X5kLxV7RHmle/view?usp=sharing', style: 'amber', external: true },
     { label: 'Contact', href: '#contact', style: 'ghost' },
   ],
-  credentials: ['MEd Digital Learning · Monash University', 'LPDP Scholar', 'AR Patent Holder'],
+  credentials: ['MEd Digital Learning · Monash University', 'LPDP Scholar'],
 }
 
 export const about = {
@@ -236,16 +236,13 @@ export const education = [
     school: 'Monash University, Australia',
     flag: 'LPDP Scholar',
     year: 'Feb 2024 \u2013 Dec 2025',
-    transcript: [
-      { grade: 'HD \u00b7 89', subject: 'Educational Organisations, Culture & Change' },
-      { grade: 'HD \u00b7 85', subject: 'Leading Educational Technology Change' },
-      { grade: 'HD \u00b7 83', subject: 'Shaping Digital Futures' },
-      { grade: 'HD \u00b7 80', subject: 'Educational Leadership in International Contexts' },
+    highlights: [
+      'Awarded for significantly enhanced campus culture, inclusion, and well-being within university community by Senior Vice-President of Monash Univeristy (2025)',
     ],
   },
   {
     degree: 'Bachelor of Informatics Engineering Education',
-    school: 'Universitas Muhammadiyah Surakarta',
+    school: 'Universitas Muhammadiyah Surakarta, Indonesia',
     flag: 'PPA Scholar',
     year: 'Aug 2018 \u2013 Oct 2022',
     highlights: [
@@ -284,28 +281,39 @@ export const skills = {
 
 export const publications = {
   publications: [
-    'Development of AR-Manner 1.0 as a Learning Media for Communication Ethics to Contact Lecturers in Higher Education Using Augmented Reality Technology',
-    "Implementing STAD Learning Model to Improve Children's Spelling Ability",
-    'Penyusunan Peta Konsep Mempermudah Belajar Siswa Selama Masa Pandemi Covid-19',
+    {
+      title: 'Development of AR-Manner 1.0 as a Learning Media for Communication Ethics to Contact Lecturers in Higher Education Using Augmented Reality Technology',
+      url: 'https://doi.org/10.1063/5.0141416',
+    },
+    {
+      title: "Implementing STAD Learning Model to Improve Children's Spelling Ability",
+      url: 'https://www.atlantis-press.com/proceedings/icolae-21/125974350',
+    },
+    {
+      title: 'Penyusunan Peta Konsep Mempermudah Belajar Siswa Selama Masa Pandemi Covid-19',
+      url: 'https://journals.ums.ac.id/index.php/jmp/article/view/11279',
+    },
   ],
   patents: [
-    'AR-Manner 1.0 \u2014 Augmented Reality Application for Communication Ethics Education in Higher Education',
+    {
+      title: 'AR-Manner 1.0 — Augmented Reality Application for Communication Ethics Education in Higher Education',
+      url: 'https://doi.org/10.1063/5.0141416',
+    },
   ],
   awards: [
-    'LPDP Full Scholarship Awardee \u2014 Indonesia Endowment Fund for Education',
-    '1st Place, National 21st Century Learning Innovation Competition (2021)',
+    { title: 'LPDP Full Scholarship Awardee — Indonesia Endowment Fund for Education', url: 'https://drive.google.com/file/d/1x1eHV7bAyIbqBatfCiDyJKF4ZSa85qQU/view?usp=sharing' },
+    { title: '1st Place, National 21st Century Learning Innovation Competition (2021)', url: 'https://fkip.ums.ac.id/wp-content/uploads/sites/43/2021/05/319_SK-Penetapan-Pemenang-Lomba-IPAMP-KSIP.pdf' },
   ],
 }
 
 export const contact = {
   message: "I'm currently open to roles in learning design, instructional design, L&D, HR-learning, education staff, and related positions across Indonesia. If you're looking for someone who designs with rigour, empathy, and evidence, let's talk.",
-  email: 'rahmatsywldn@gmail.com',
+  email: 'contact.rahmats@gmail.com',
   linkedin: 'https://linkedin.com/in/rahmat-syawaludin',
   secondary: [
-    { label: 'R\u00e9sum\u00e9', href: 'https://drive.google.com/file/d/1num2E_NvG-rUbmPGooF1DOMQSQTTUdEn/view' },
-    { label: 'GitHub', href: 'https://github.com/rahmatsyawaludin' },
+    { label: 'Resume', href: 'https://drive.google.com/file/d/1-2igf2luJsMVtNlFo-W2X5kLxV7RHmle/view?usp=sharing' },
   ],
   openTo: ['Learning Designer', 'Instructional Designer', 'L&D Specialist', 'People Development', 'Training Specialist', 'HR Learning', 'Curriculum Designer'],
-  phone: '+62 858 8223 4015',
-  location: 'Jakarta, Indonesia',
+  phone: '+6285 11145 0852',
+  location: 'South Jakarta, Indonesia',
 }
