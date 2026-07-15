@@ -1,6 +1,7 @@
 export default function ProjectCard({ project, kind, onClick }) {
   return (
     <button
+      id={project.slug}
       onClick={onClick}
       className="snap-start shrink-0 w-[280px] md:w-[300px] text-left bg-white rounded-2xl border border-hairline overflow-hidden hover:shadow-lifted hover:-translate-y-1 transition-all"
     >
