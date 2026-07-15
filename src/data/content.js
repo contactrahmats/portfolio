@@ -2,7 +2,9 @@
 // Replace photo: null placeholders with real image imports once photos are ready.
 
 import img_personal from './img_personal.webp'
-
+import babarkalesang from './babarkalesang.webp'
+import storyquest from './storyquest.webp'
+import armanner from './armanner.webp'
 
 
 export const hero = {
@@ -43,7 +45,7 @@ export const caseStudies = [
     timeframe: '2022\u20132023',
     hook: 'Designed a fully offline learning lab for a village with 12 hours of power a day.',
     badges: ['300\u2013500 Students', 'Still Active'],
-    photo: null, // TODO: single hero photo for this case study
+    photo: babarkalesang, // TODO: single hero photo for this case study
     externalLink: 'https://www.instagram.com/babarkalesang.desamind/',
     tags: ['ADDIE', 'AR Development', 'Offline-First', 'Teacher Training', 'Needs Analysis', 'CSR Alignment'],
     stages: [
@@ -72,7 +74,7 @@ export const caseStudies = [
     timeframe: '2025',
     hook: 'A gamified offline literacy app, designed with a rural community instead of for one.',
     badges: ['HD \u00b7 83/100'],
-    photo: null,
+    photo: storyquest,
     externalLink: 'https://pewter-washer-791.notion.site/Community-Based-Offline-Learning-Companion-App-28c46416af218007b7aedb724117a71d',
     tags: ['Stanford D.school', 'Double Diamond', 'Co-design', 'Offline-First', 'Gamification', 'Community Engagement'],
     stages: [
@@ -101,7 +103,7 @@ export const caseStudies = [
     timeframe: '2020\u20132022',
     hook: 'A patented AR app that makes the moment a student\u2019s mistake becomes visible.',
     badges: ['Registered Patent', 'Published'],
-    photo: null,
+    photo: armanner,
     externalLink: 'https://doi.org/10.1063/5.0141416',
     tags: ['AR Development', 'Research Design', 'Scenario-Based Learning', 'Peer Review'],
     stages: [
