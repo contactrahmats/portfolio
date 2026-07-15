@@ -15,7 +15,7 @@ export const hero = {
 }
 
 export const about = {
-  photo: null, // TODO: replace with real photo import
+  photo: img_personal.webp, // TODO: replace with real photo import
   narrative: [
     "I didn't start in learning design. I started in a classroom in a small city in Central Java, curious about why some students thrived and others quietly disappeared. That question followed me through an Informatics Engineering degree, into rural schools in Maluku where electricity ran six hours a day, and eventually to Monash University in Australia, where I spent two years studying exactly why learning breaks down and how to fix it.",
     'As an LPDP scholar, I came back to Indonesia because this is where the hardest, most important learning problems live, and I wanted to work on them.',
