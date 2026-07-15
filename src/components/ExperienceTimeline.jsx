@@ -22,6 +22,23 @@ function openCaseStudy(slug) {
   }, 400)
 }
 
+function handleTimelineClick(item) {
+  if (!item.linkTo) return;
+
+  // If it's a flagship case study, run your modal logic
+  const isCaseStudy = ['babar-kalesang', 'monash-capstone', 'ar-manner'].includes(item.linkTo);
+
+  if (isCaseStudy) {
+    document.querySelector('#case-studies')?.scrollIntoView({ behavior: 'smooth' })
+    setTimeout(() => {
+      window.dispatchEvent(new CustomEvent('open-case-study', { detail: { slug: item.linkTo } }))
+    }, 400)
+  } else {
+    // If it's a professional work slug (like 'can'), scroll straight to its card ID
+    document.getElementById(item.linkTo)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
 export default function ExperienceTimeline() {
   return (
     <section id="experience" className="py-24 px-6 md:px-12 bg-white">
