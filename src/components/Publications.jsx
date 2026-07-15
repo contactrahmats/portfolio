@@ -31,7 +31,7 @@ export default function Publications() {
     >
       <span aria-hidden="true">{g.icon}</span>
       {item.url ? (
-        
+        <a
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
