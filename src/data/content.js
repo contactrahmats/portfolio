@@ -5,7 +5,8 @@ import img_personal from './img_personal.webp'
 import babarkalesang from './babarkalesang.webp'
 import storyquest from './storyquest.webp'
 import armanner from './armanner.webp'
-
+import kampusmengajar from './kampusmengajar.webp'
+import lilininspirasi from './lilininspirasi.webp'
 
 export const hero = {
   greeting: "Hi, I'm",
@@ -133,7 +134,7 @@ export const professionalWork = [
   {
     title: 'Computational Thinking Curriculum',
     org: 'UMS \u00d7 Bebras Indonesia \u00b7 Feb\u2013Jun 2022',
-    photo: null,
+    photo: lilininspirasi,
     description: 'Designed and delivered a Computational Thinking curriculum across 5 to 10 schools in the Solo Raya region through weekly school visits, aligned to Bebras Indonesia\u2019s national CT framework.',
     tags: ['Curriculum Design', 'Inquiry-Based Learning', 'Facilitation'],
     impact: '5\u201310 Schools \u00b7 National CT Framework Alignment',
@@ -142,11 +143,11 @@ export const professionalWork = [
   {
     title: 'Ministry of Education \u2014 Kampus Mengajar',
     org: 'Kemendikbudristek Indonesia \u00b7 Aug\u2013Dec 2021',
-    photo: null,
+    photo: kampusmengajar,
     description: 'Team Lead of Teacher Assistants and PIC for Grade 1 students. Taught ICT to Grades 4 to 6, designing differentiated lesson plans for learners across varied socio-economic and literacy backgrounds.',
     tags: ['Differentiated Instruction', 'Team Leadership', 'ICT Teaching'],
     impact: 'Ministry Programme \u00b7 Team Lead',
-    link: null,
+    link: 'https://www.instagram.com/km_sdsambirembe1?igsh=a3UyNXB2bG8ydzho',
   },
 ]
 
