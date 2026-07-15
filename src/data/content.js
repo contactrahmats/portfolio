@@ -153,6 +153,24 @@ export const professionalWork = [
     impact: 'Ministry Programme \u00b7 Team Lead',
     link: 'https://www.instagram.com/km_sdsambirembe1?igsh=a3UyNXB2bG8ydzho',
   },
+    {
+    title: 'Campus Ambassadors',
+    org: 'Monash University \u00b7 Jun\u2013Dec 2025',
+    photo: campusambassadors,
+    description: 'Supported 10+ multicultural university events for international visitors. Creating a warmth-welcoming community within university',
+    tags: ['Public Speaking', 'Event Management', 'Problem Solving'],
+    impact: 'Well Appreciated Ambassadors Award by Deputy Vice-Chancellor and Senior Vice-President of Monash University',
+    link: 'https://www.monash.edu/student-ambassador-program#tabs__3515501-01',
+  },
+    {
+    title: 'Content Writing at UMS',
+    org: 'Universitas Muhammadiyah Surakarta \u00b7 Oct 2022\u2013Aug 2023',
+    photo: ums,
+    description: 'Maintained digital academic content for the university website. This team lead UMS into a whole new modern identity in the digital platforms',
+    tags: ['Stakeholder Management', 'Team Leadership and Coordination', 'Project Management'],
+    impact: 'A well designed website for higher education',
+    link: 'https://www.ums.ac.id/',
+  },
 ]
 
 export const selfInitiated = [
