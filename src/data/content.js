@@ -1,6 +1,10 @@
 // All site copy lives here so components stay presentational.
 // Replace photo: null placeholders with real image imports once photos are ready.
 
+import img_personal from '../assets/img_personal.webp'
+
+
+
 export const hero = {
   greeting: "Hi, I'm",
   name: 'Rahmat Syawaludin',
@@ -15,7 +19,7 @@ export const hero = {
 }
 
 export const about = {
-  photo: img_personal.webp, // TODO: replace with real photo import
+  photo: img_personal, // TODO: replace with real photo import
   narrative: [
     "I didn't start in learning design. I started in a classroom in a small city in Central Java, curious about why some students thrived and others quietly disappeared. That question followed me through an Informatics Engineering degree, into rural schools in Maluku where electricity ran six hours a day, and eventually to Monash University in Australia, where I spent two years studying exactly why learning breaks down and how to fix it.",
     'As an LPDP scholar, I came back to Indonesia because this is where the hardest, most important learning problems live, and I wanted to work on them.',
