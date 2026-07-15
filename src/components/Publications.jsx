@@ -23,7 +23,7 @@ export default function Publications() {
           {GROUPS.map((g) => (
             <div key={g.key}>
               <h3 className="text-xs font-bold uppercase tracking-wide text-muted mb-4">{g.label}</h3>
-              <ul className="flex flex-col gap-3">
+               <ul className="flex flex-col gap-3">
   {publications[g.key].map((item) => (
     <li
       key={item.title}
