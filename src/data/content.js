@@ -139,6 +139,7 @@ export const caseStudies = [
 // each its own horizontally scrolling row.
 export const professionalWork = [
   {
+    slug: 'ct',
     title: 'Computational Thinking Curriculum',
     org: 'UMS \u00d7 Bebras Indonesia \u00b7 Feb\u2013Jun 2022',
     photo: lilininspirasi,
@@ -148,6 +149,7 @@ export const professionalWork = [
     link: 'https://desamind.id/2022/05/11/desamind-indonesia-bersama-biro-bebras-universitas-muhammadiyah-surakarta-sukses-mengadakan-kelas-lilin-inspirasi/',
   },
   {
+    slug: 'km',
     title: 'Ministry of Education \u2014 Kampus Mengajar',
     org: 'Kemendikbudristek Indonesia \u00b7 Aug\u2013Dec 2021',
     photo: kampusmengajar,
@@ -157,6 +159,7 @@ export const professionalWork = [
     link: 'https://www.instagram.com/km_sdsambirembe1?igsh=a3UyNXB2bG8ydzho',
   },
     {
+    slug: 'can',
     title: 'Campus Ambassadors',
     org: 'Monash University \u00b7 Jun\u2013Dec 2025',
     photo: campusambassadors,
@@ -166,6 +169,7 @@ export const professionalWork = [
     link: 'https://www.monash.edu/student-ambassador-program#tabs__3515501-01',
   },
     {
+    slug: 'ums',
     title: 'Content Writing at UMS',
     org: 'Universitas Muhammadiyah Surakarta \u00b7 Oct 2022\u2013Aug 2023',
     photo: ums,
@@ -213,13 +217,13 @@ export const selfInitiated = [
 
 // category: 'ld' | 'edu' | 'org' | 'tech' — drives the timeline dot color
 export const experience = [
-  { period: 'Jul 2026 \u2013 Present', role: 'Trainer and Learning Development', org: 'PT Ocean Media Indonesia', oneLiner: 'Training new talent weekly using a standardized training module.', category: 'edu' },
-  { period: 'Jun \u2013 Dec 2025', role: 'Campus Ambassador', org: 'Monash University', oneLiner: 'Supported 10+ university events for international visitors.', category: 'edu' },
+  { period: 'Jul 2026 \u2013 Present', role: 'Trainer and Learning Development', org: 'PT Ocean Media Indonesia', oneLiner: 'Training new talent weekly using a standardized training module.', category: 'ld' },
+  { period: 'Jun \u2013 Dec 2025', role: 'Campus Ambassador', org: 'Monash University', oneLiner: 'Supported 10+ university events for international visitors.', category: 'edu', linkTo: 'can' },
   { period: 'Mar \u2013 Jun 2025', role: 'Learning Designer', org: 'Monash Capstone', oneLiner: 'Designed an offline learning app achieving High Distinction.', category: 'ld', linkTo: 'monash-capstone' },
   { period: 'Jun 2022 \u2013 Nov 2023', role: 'Lead Instructional Designer', org: 'Babar Kalesang', oneLiner: 'Designed offline AR learning reaching 300 to 500 students.', category: 'ld', linkTo: 'babar-kalesang' },
-  { period: 'Oct 2022 \u2013 Aug 2023', role: 'Web Content Writer', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Maintained digital academic content for the university website.', category: 'org' },
-  { period: 'Feb \u2013 Jun 2022', role: 'Curriculum Designer & Tutor', org: 'CT Curriculum', oneLiner: 'Delivered Computational Thinking curriculum across 5 to 10 schools.', category: 'ld' },
-  { period: 'Aug \u2013 Dec 2021', role: 'Team Lead & ICT Teacher', org: 'Ministry of Education', oneLiner: 'Led differentiated ICT instruction for Grades 4 to 6.', category: 'edu' },
+  { period: 'Oct 2022 \u2013 Aug 2023', role: 'Web Content Writer', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Maintained digital academic content for the university website.', category: 'org', linkTo: 'ums' },
+  { period: 'Feb \u2013 Jun 2022', role: 'Curriculum Designer & Tutor', org: 'CT Curriculum', oneLiner: 'Delivered Computational Thinking curriculum across 5 to 10 schools.', category: 'ld', linkTo: 'ct' },
+  { period: 'Aug \u2013 Dec 2021', role: 'Team Lead & ICT Teacher', org: 'Ministry of Education', oneLiner: 'Led differentiated ICT instruction for Grades 4 to 6.', category: 'edu', linkTo: 'km' },
   { period: 'Feb \u2013 Jul 2021', role: 'Cloud Computing Capstone', org: 'Bangkit Academy', oneLiner: 'Built cloud infrastructure for an emergency response app.', category: 'tech' },
   { period: 'Mar 2020 \u2013 Dec 2024', role: 'Director of Secretariat & Finance', org: 'Desamind Indonesia', oneLiner: 'Led operations and finance across 6 divisions, budget exceeding IDR 600 million.', category: 'org' },
   { period: 'Mar 2020 \u2013 Dec 2021', role: 'Research Assistant', org: 'AR-Manner', oneLiner: 'Co-developed a patented AR ethics education tool.', category: 'ld', linkTo: 'ar-manner' },
