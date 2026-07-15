@@ -22,20 +22,22 @@ function openCaseStudy(slug) {
   }, 400)
 }
 
-function handleTimelineClick(item) {
-  if (!item.linkTo) return;
+function handleTimelineClick(slug) {
+  if (!slug) return;
 
-  // If it's a flagship case study, run your modal logic
-  const isCaseStudy = ['babar-kalesang', 'monash-capstone', 'ar-manner'].includes(item.linkTo);
+  // 1. Identify your flagship case study slugs
+  const flagshipSlugs = ['babar-kalesang', 'monash-capstone', 'ar-manner'];
 
-  if (isCaseStudy) {
-    document.querySelector('#case-studies')?.scrollIntoView({ behavior: 'smooth' })
+  if (flagshipSlugs.includes(slug)) {
+    // Scroll to case studies container and fire the custom event listener
+    document.querySelector('#case-studies')?.scrollIntoView({ behavior: 'smooth' });
     setTimeout(() => {
-      window.dispatchEvent(new CustomEvent('open-case-study', { detail: { slug: item.linkTo } }))
-    }, 400)
+      window.dispatchEvent(new CustomEvent('open-case-study', { detail: { slug } }));
+    }, 400);
   } else {
-    // If it's a professional work slug (like 'can'), scroll straight to its card ID
-    document.getElementById(item.linkTo)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // 2. Fallback: Treat it as a standard anchor scroll target (e.g., #projects)
+    // If you want 'can' to land on the professional work section, target its container wrapper:
+    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
 
