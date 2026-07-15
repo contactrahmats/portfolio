@@ -7,6 +7,10 @@ import storyquest from './storyquest.webp'
 import armanner from './armanner.webp'
 import kampusmengajar from './kampusmengajar.webp'
 import lilininspirasi from './lilininspirasi.webp'
+import humanfirewall from './humanfirewall.png'
+import equilearn from './equilearn.png'
+import edupulse from './edupulse.png'
+import pmdashboard from './pmdashboard.png'
 
 export const hero = {
   greeting: "Hi, I'm",
@@ -155,7 +159,7 @@ export const selfInitiated = [
   {
     title: 'EquiLearn',
     org: 'Personal Project \u00b7 Data Analytics',
-    photo: null,
+    photo: equilearn,
     description: 'An educational equity analytics dashboard that turns raw student data into insight, helping education teams spot learning patterns while respecting data privacy.',
     builtWith: ['Python', 'Streamlit', 'Pandas'],
     link: 'https://rahmatsyawaludin-equilearn.streamlit.app/',
@@ -163,7 +167,7 @@ export const selfInitiated = [
   {
     title: 'PM Dashboard',
     org: 'Personal Project',
-    photo: null,
+    photo: pmdashboard,
     description: 'A project management dashboard that turns spreadsheet data into a clear progress view for a community-based offline learning app idea.',
     builtWith: ['Streamlit', 'Python', 'Data Visualization'],
     link: 'https://rahmatsyawaludin-pm-dashboard.streamlit.app/',
@@ -171,7 +175,7 @@ export const selfInitiated = [
   {
     title: 'EduPulse',
     org: 'Personal Project',
-    photo: null,
+    photo: edupulse,
     description: 'An LMS-inspired prototype built to improve learner engagement through progress tracking, quizzes, feedback loops, and simple motivation features.',
     builtWith: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://rahmatsyawaludin.github.io/edupulse/',
@@ -179,7 +183,7 @@ export const selfInitiated = [
   {
     title: 'Human Firewall',
     org: 'Case Study Project',
-    photo: null,
+    photo: humanfirewall,
     description: 'A case study exploring a game-based learning solution for cybersecurity training, combining behavioral design and microlearning to build stronger workplace security habits.',
     builtWith: ['Behavioral Design', 'Game-based Learning'],
     link: 'https://rahmatsyawaludin.github.io/case-study-human-firewall/',
