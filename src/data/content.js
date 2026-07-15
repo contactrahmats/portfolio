@@ -1,7 +1,7 @@
 // All site copy lives here so components stay presentational.
 // Replace photo: null placeholders with real image imports once photos are ready.
 
-import img_personal from 'portfolio/src/data/img_personal.webp'
+import img_personal from './img_personal.webp'
 
 
 
