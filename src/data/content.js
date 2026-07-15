@@ -11,6 +11,9 @@ import humanfirewall from './humanfirewall.png'
 import equilearn from './equilearn.png'
 import edupulse from './edupulse.png'
 import pmdashboard from './pmdashboard.png'
+import ums from './ums.png'
+import campusambassadors from './campusambassadors.png'
+
 
 export const hero = {
   greeting: "Hi, I'm",
