@@ -24,16 +24,27 @@ export default function Publications() {
             <div key={g.key}>
               <h3 className="text-xs font-bold uppercase tracking-wide text-muted mb-4">{g.label}</h3>
               <ul className="flex flex-col gap-3">
-                {publications[g.key].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-3 bg-offwhite rounded-xl border border-hairline px-5 py-4 text-sm text-ink leading-snug"
-                  >
-                    <span aria-hidden="true">{g.icon}</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+  {publications[g.key].map((item) => (
+    <li
+      key={item.title}
+      className="flex items-start gap-3 bg-offwhite rounded-xl border border-hairline px-5 py-4 text-sm leading-snug"
+    >
+      <span aria-hidden="true">{g.icon}</span>
+      {item.url ? (
+        
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-indigo font-semibold hover:underline"
+        >
+          {item.title} ↗
+        </a>
+      ) : (
+        <span className="text-ink">{item.title}</span>
+      )}
+    </li>
+  ))}
+</ul>
             </div>
           ))}
         </div>
