@@ -239,6 +239,7 @@ export const education = [
     highlights: [
       'Awarded for significantly enhanced campus culture, inclusion, and well-being within university community by Senior Vice-President of Monash Univeristy (2025)',
     ],
+    proof: 'https://drive.google.com/drive/folders/1RZBHumDP8xvnj2Ij4PP63QMc_-b8st1b?usp=sharing'
   },
   {
     degree: 'Bachelor of Informatics Engineering Education',
@@ -249,6 +250,7 @@ export const education = [
       '1st Place, National 21st Century Learning Innovation Competition (2021)',
       'Bangkit Academy (Google, Goto, Traveloka) \u2014 Cloud Computing specialisation',
     ],
+    proof: 'https://drive.google.com/drive/folders/1t_R3JBt_Tpuu-734--LnX8bSFGuTcWqD?usp=sharing'
   },
 ]
 
