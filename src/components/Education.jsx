@@ -53,7 +53,7 @@ export default function Education() {
               )}
 
               {ed.proof && (
-  
+  <a
     href={ed.proof}
     target="_blank"
     rel="noopener noreferrer"
