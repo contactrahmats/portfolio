@@ -47,12 +47,12 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://drive.google.com/file/d/1num2E_NvG-rUbmPGooF1DOMQSQTTUdEn/view"
+              href="https://drive.google.com/file/d/1-2igf2luJsMVtNlFo-W2X5kLxV7RHmle/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 inline-block px-4 py-2 rounded-full bg-indigo text-white text-sm font-bold hover:bg-indigo-dark transition-colors"
             >
-              {'R\u00e9sum\u00e9 \u2197'}
+              {'Resum\u00e9 \u2197'}
             </a>
           </li>
         </ul>
