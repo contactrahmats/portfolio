@@ -29,7 +29,7 @@ function handleTimelineClick(linkTo) {
     // linkTo is a project title (Professional Work / Self-Initiated)
     document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
     setTimeout(() => {
-      window.dispatchEvent(new CustomEvent('open-project', { detail: { title: linkTo } }))
+      window.dispatchEvent(new CustomEvent('open-project', { detail: { slug: linkTo } }))
     }, 400)
   }
 }
