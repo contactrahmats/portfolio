@@ -9,8 +9,8 @@ export default function Projects() {
 
   useEffect(() => {
     const handler = (e) => {
-      const title = e.detail?.title
-      const found = [...professionalWork, ...selfInitiated].find((p) => p.title === title)
+      const slug = e.detail?.title
+      const found = [...professionalWork, ...selfInitiated].find((p) => p.slug === slug)
       if (found) {
         const kind = professionalWork.includes(found) ? 'professional' : 'self'
         setActive({ project: found, kind })
