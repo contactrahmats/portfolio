@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { professionalWork, selfInitiated } from '../data/content'
 import HorizontalScrollRow from './HorizontalScrollRow'
 import ProjectCard from './ProjectCard'
@@ -6,7 +6,27 @@ import ProjectModal from './ProjectModal'
 
 export default function Projects() {
   const [active, setActive] = useState(null) // { project, kind }
+  
+  export default function Projects() {
+  const [active, setActive] = useState(null) // { project, kind }
 
+  useEffect(() => {
+    const handler = (e) => {
+      const title = e.detail?.title
+      const found = [...professionalWork, ...selfInitiated].find((p) => p.title === title)
+      if (found) {
+        const kind = professionalWork.includes(found) ? 'professional' : 'self'
+        setActive({ project: found, kind })
+      }
+    }
+    window.addEventListener('open-project', handler)
+    return () => window.removeEventListener('open-project', handler)
+  }, [])
+
+  return (
+    <section id="projects" className="py-24 px-6 md:px-12 bg-white">
+      ...
+  
   return (
     <section id="projects" className="py-24 px-6 md:px-12 bg-white">
       <div className="max-w-5xl mx-auto">
