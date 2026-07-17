@@ -14,30 +14,23 @@ const LEGEND = [
   { key: 'tech', label: 'Technology' },
 ]
 
-function openCaseStudy(slug) {
-  document.querySelector('#case-studies')?.scrollIntoView({ behavior: 'smooth' })
-  // give the scroll a moment before opening the modal
-  setTimeout(() => {
-    window.dispatchEvent(new CustomEvent('open-case-study', { detail: { slug } }))
-  }, 400)
-}
+const FLAGSHIP_SLUGS = ['babar-kalesang', 'monash-capstone', 'ar-manner']
 
-function handleTimelineClick(slug) {
-  if (!slug) return;
+function handleTimelineClick(linkTo) {
+  if (!linkTo) return
 
-  // 1. Identify your flagship case study slugs
-  const flagshipSlugs = ['babar-kalesang', 'monash-capstone', 'ar-manner'];
-
-  if (flagshipSlugs.includes(slug)) {
-    // Scroll to case studies container and fire the custom event listener
-    document.querySelector('#case-studies')?.scrollIntoView({ behavior: 'smooth' });
+  if (FLAGSHIP_SLUGS.includes(linkTo)) {
+    // linkTo is a flagship case study slug
+    document.querySelector('#case-studies')?.scrollIntoView({ behavior: 'smooth' })
     setTimeout(() => {
-      window.dispatchEvent(new CustomEvent('open-case-study', { detail: { slug } }));
-    }, 400);
+      window.dispatchEvent(new CustomEvent('open-case-study', { detail: { slug: linkTo } }))
+    }, 400)
   } else {
-    // 2. Fallback: Treat it as a standard anchor scroll target (e.g., #projects)
-    // If you want 'can' to land on the professional work section, target its container wrapper:
-    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // linkTo is a project title (Professional Work / Self-Initiated)
+    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
+    setTimeout(() => {
+      window.dispatchEvent(new CustomEvent('open-project', { detail: { title: linkTo } }))
+    }, 400)
   }
 }
 
@@ -73,12 +66,12 @@ export default function ExperienceTimeline() {
               return (
                 <div
                   key={e.role + e.period}
-                  className={`relative md:grid md:grid-cols-2 md:gap-8 ${isLeft ? '' : ''}`}
+                  className="relative md:grid md:grid-cols-2 md:gap-8"
                 >
                   <span
                     className={`absolute left-0 md:left-1/2 top-1.5 md:-translate-x-1/2 w-3.5 h-3.5 rounded-full border-2 border-white ${DOT_COLOR[e.category]}`}
                   />
-                  <div className={`md:contents`}>
+                  <div className="md:contents">
                     <div className={isLeft ? 'md:text-right md:pr-10' : 'md:col-start-2 md:pl-10'}>
                       <div className="text-[11px] font-bold uppercase tracking-wide text-faint mb-1">
                         {e.period}
@@ -91,7 +84,7 @@ export default function ExperienceTimeline() {
                         {e.oneLiner}{' '}
                         {e.linkTo && (
                           <button
-                            onClick={() => openCaseStudy(e.linkTo)}
+                            onClick={() => handleTimelineClick(e.linkTo)}
                             className="font-bold text-teal-dark hover:text-teal-dark/80 whitespace-nowrap"
                           >
                             Read the case study →
