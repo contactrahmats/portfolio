@@ -51,6 +51,18 @@ export default function Education() {
                   ))}
                 </ul>
               )}
+
+              {ed.proof && (
+  
+    href={ed.proof}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-indigo hover:text-indigo-dark"
+  >
+    View Credentials ↗
+  </a>
+)}
+          
             </div>
           ))}
         </div>
