@@ -6,9 +6,6 @@ import ProjectModal from './ProjectModal'
 
 export default function Projects() {
   const [active, setActive] = useState(null) // { project, kind }
-  
-  export default function Projects() {
-  const [active, setActive] = useState(null) // { project, kind }
 
   useEffect(() => {
     const handler = (e) => {
@@ -23,10 +20,6 @@ export default function Projects() {
     return () => window.removeEventListener('open-project', handler)
   }, [])
 
-  return (
-    <section id="projects" className="py-24 px-6 md:px-12 bg-white">
-      ...
-  
   return (
     <section id="projects" className="py-24 px-6 md:px-12 bg-white">
       <div className="max-w-5xl mx-auto">
