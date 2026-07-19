@@ -310,7 +310,7 @@ export const publications = {
 
 export const contact = {
   message: "I'm currently open to roles in learning design, instructional design, L&D, HR-learning, education staff, and related positions across Indonesia. If you're looking for someone who designs with rigour, empathy, and evidence, let's talk.",
-  email: 'contact.rahmats@gmail.com',
+  email: 'contact@rahmats.web.id',
   linkedin: 'https://linkedin.com/in/rahmat-syawaludin',
   secondary: [
     { label: 'Resume', href: 'https://drive.google.com/file/d/1-2igf2luJsMVtNlFo-W2X5kLxV7RHmle/view?usp=sharing' },
