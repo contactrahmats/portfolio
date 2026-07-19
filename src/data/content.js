@@ -314,6 +314,7 @@ export const contact = {
   linkedin: 'https://linkedin.com/in/rahmat-syawaludin',
   secondary: [
     { label: 'Resume', href: 'https://drive.google.com/file/d/1-2igf2luJsMVtNlFo-W2X5kLxV7RHmle/view?usp=sharing' },
+    { label: 'Github', href: 'https://github.com/contactrahmats' },
   ],
   openTo: ['Learning Designer', 'Instructional Designer', 'L&D Specialist', 'People Development', 'Training Specialist', 'HR Learning', 'Curriculum Designer'],
   phone: '+6285 11145 0852',
