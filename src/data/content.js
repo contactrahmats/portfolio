@@ -281,6 +281,21 @@ export const skills = {
   ],
 }
 
+export const certifications = [
+  {
+    title: 'Gemini for Data Scientists and Analysts',
+    issuer: 'Google Skills',
+    date: 'Aug 2026',
+    url: 'https://www.skills.google/public_profiles/400df858-63ea-4cfa-9a1f-d57c4bbb306f',
+  },
+  {
+    title: 'Google Certified Educator Level 1 Exam (A)',
+    issuer: 'Google Skills',
+    date: 'Aug 2026',
+    url: 'https://www.skills.google/public_profiles/400df858-63ea-4cfa-9a1f-d57c4bbb306f',
+  },
+]
+
 export const publications = {
   publications: [
     {
