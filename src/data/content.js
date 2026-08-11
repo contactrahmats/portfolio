@@ -294,6 +294,12 @@ export const certifications = [
     date: 'Aug 2026',
     url: 'https://www.skills.google/public_profiles/400df858-63ea-4cfa-9a1f-d57c4bbb306f',
   },
+  {
+    title: 'Google Certified Educator Level 2 Exam (A)',
+    issuer: 'Google Skills',
+    date: 'Aug 2026',
+    url: 'https://www.skills.google/public_profiles/400df858-63ea-4cfa-9a1f-d57c4bbb306f/badges/26569521',
+  },
 ]
 
 export const publications = {
