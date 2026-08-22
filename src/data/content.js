@@ -300,6 +300,12 @@ export const certifications = [
     date: 'Aug 2026',
     url: 'https://www.skills.google/public_profiles/400df858-63ea-4cfa-9a1f-d57c4bbb306f/badges/26569521',
   },
+  {
+    title: 'Mental Health First Aid',
+    issuer: 'MHFA Australia',
+    date: 'Nov 2025',
+    url: 'https://media.licdn.com/dms/image/v2/D4E2DAQHLiUrE324wew/profile-treasury-document-images_1280/B4EZrILql6IQAU-/1/1764295094437?e=1788393600&v=beta&t=zPDhsFZOJqLj_IcRcHcF36Shu6mI8wALQZ7JbBJUIx0',
+  },
 ]
 
 export const publications = {
