@@ -36,9 +36,10 @@ export const about = {
   ],
   credibilityPoints: [
     'MEd Digital Learning, Monash University, LPDP Scholar',
-    '300 to 500 students reached through field-deployed training',
+    '7 programs, 160+ participants, 95% satisfaction in a single month',
+    '300 to 500 students reached on islands with no internet',
     '3 peer-reviewed publications, 1 registered patent',
-    'Frameworks: ADDIE, Kirkpatrick, Backward Design',
+    'Frameworks: ADDIE, SAM, Kirkpatrick, Backward Design',
   ],
   closing: 'Good training should survive contact with reality. That\u2019s the only bar I design to.',
 }
@@ -143,7 +144,7 @@ export const professionalWork = [
     title: 'Computational Thinking Curriculum',
     org: 'UMS \u00d7 Bebras Indonesia \u00b7 Feb\u2013Jun 2022',
     photo: lilininspirasi,
-    description: 'Designed and delivered a Computational Thinking curriculum across 5 to 10 schools in the Solo Raya region through weekly school visits, aligned to Bebras Indonesia\u2019s national CT framework.',
+    description: 'Took Bebras Indonesia\u2019s national Computational Thinking framework off the page and into 5 to 10 schools across Solo Raya, one weekly visit at a time. I designed the curriculum, then taught it myself.',
     tags: ['Curriculum Design', 'Inquiry-Based Learning', 'Facilitation'],
     impact: '5\u201310 Schools \u00b7 National CT Framework Alignment',
     link: 'https://desamind.id/2022/05/11/desamind-indonesia-bersama-biro-bebras-universitas-muhammadiyah-surakarta-sukses-mengadakan-kelas-lilin-inspirasi/',
@@ -153,7 +154,7 @@ export const professionalWork = [
     title: 'Ministry of Education \u2014 Kampus Mengajar',
     org: 'Kemendikbudristek Indonesia \u00b7 Aug\u2013Dec 2021',
     photo: kampusmengajar,
-    description: 'Team Lead of Teacher Assistants and PIC for Grade 1 students. Taught ICT to Grades 4 to 6, designing differentiated lesson plans for learners across varied socio-economic and literacy backgrounds.',
+    description: 'Led a team of teacher assistants and looked after the Grade 1 class. I also taught ICT to Grades 4 to 6, where no two students started from the same place, so every lesson plan bent the national curriculum to fit the kids in the room.',
     tags: ['Differentiated Instruction', 'Team Leadership', 'ICT Teaching'],
     impact: 'Ministry Programme \u00b7 Team Lead',
     link: 'https://www.instagram.com/km_sdsambirembe1?igsh=a3UyNXB2bG8ydzho',
@@ -161,11 +162,11 @@ export const professionalWork = [
     {
     slug: 'can',
     title: 'Campus Ambassadors',
-    org: 'Monash University \u00b7 Jun\u2013Dec 2025',
+    org: 'Monash University \u00b7 Jun\u2013Jul 2025',
     photo: campusambassadors,
-    description: 'Supported 10+ multicultural university events for international visitors. Creating a warmth-welcoming community within university',
+    description: 'Ran registration and orientation for hundreds of international visitors across 10+ high-volume events. The job on paper was logistics. The real job was making people who\u2019d just landed in a new country feel like they belonged, in whatever language they needed.',
     tags: ['Public Speaking', 'Event Management', 'Problem Solving'],
-    impact: 'Well Appreciated Ambassadors Award by Deputy Vice-Chancellor and Senior Vice-President of Monash University',
+    impact: 'Recognised by the Deputy Vice-Chancellor and Senior Vice-President of Monash University',
     link: 'https://www.monash.edu/student-ambassador-program#tabs__3515501-01',
   },
     {
@@ -217,16 +218,16 @@ export const selfInitiated = [
 
 // category: 'ld' | 'edu' | 'org' | 'tech' — drives the timeline dot color
 export const experience = [
-  { period: 'Jul 2026 \u2013 Present', role: 'Trainer and Learning Development', org: 'PT Ocean Media Indonesia', oneLiner: 'Training new talent weekly using a standardized training module.', category: 'ld' },
-  { period: 'Jun \u2013 Dec 2025', role: 'Campus Ambassador', org: 'Monash University', oneLiner: 'Supported 10+ university events for international visitors.', category: 'edu', linkTo: 'can' },
+  { period: 'Sep 2026 \u2013 Present', role: 'Training Consultant', org: 'Alatan Asasta Indonesia', oneLiner: 'Designing procurement training for government and vendors, from needs analysis to evaluation. 7 programs, 160+ participants, 95% satisfaction in one month.', category: 'ld' },
+  { period: 'Jun \u2013 Jul 2025', role: 'Campus Ambassador', org: 'Monash University', oneLiner: 'Welcomed hundreds of international visitors across 10+ events.', category: 'edu', linkTo: 'can' },
   { period: 'Mar \u2013 Jun 2025', role: 'Learning Designer', org: 'Monash Capstone', oneLiner: 'Designed an offline learning app achieving High Distinction.', category: 'ld', linkTo: 'monash-capstone' },
-  { period: 'Jun 2022 \u2013 Nov 2023', role: 'Lead Instructional Designer', org: 'Babar Kalesang', oneLiner: 'Designed offline AR learning reaching 300 to 500 students.', category: 'ld', linkTo: 'babar-kalesang' },
+  { period: 'Jun 2022 \u2013 Dec 2023', role: 'Learning Developer & Trainer', org: 'Babar Kalesang', oneLiner: 'Built offline learning for island schools with no internet, reaching 300 to 500 students.', category: 'ld', linkTo: 'babar-kalesang' },
   { period: 'Oct 2022 \u2013 Aug 2023', role: 'Web Content Writer', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Maintained digital academic content for the university website.', category: 'org', linkTo: 'ums' },
-  { period: 'Feb \u2013 Jun 2022', role: 'Curriculum Designer & Tutor', org: 'CT Curriculum', oneLiner: 'Delivered Computational Thinking curriculum across 5 to 10 schools.', category: 'ld', linkTo: 'ct' },
+  { period: 'Feb \u2013 Jun 2022', role: 'Curriculum Designer & Tutor', org: 'CT Curriculum', oneLiner: 'Designed and taught a Computational Thinking curriculum in 5 to 10 schools.', category: 'ld', linkTo: 'ct' },
   { period: 'Aug \u2013 Dec 2021', role: 'Team Lead & ICT Teacher', org: 'Ministry of Education', oneLiner: 'Led differentiated ICT instruction for Grades 4 to 6.', category: 'edu', linkTo: 'km' },
   { period: 'Feb \u2013 Jul 2021', role: 'Cloud Computing Capstone', org: 'Bangkit Academy', oneLiner: 'Built cloud infrastructure for an emergency response app.', category: 'tech' },
-  { period: 'Mar 2020 \u2013 Dec 2024', role: 'Director of Secretariat & Finance', org: 'Desamind Indonesia', oneLiner: 'Led operations and finance across 6 divisions, budget exceeding IDR 600 million.', category: 'org' },
-  { period: 'Mar 2020 \u2013 Dec 2021', role: 'Research Assistant', org: 'AR-Manner', oneLiner: 'Co-developed a patented AR ethics education tool.', category: 'ld', linkTo: 'ar-manner' },
+  { period: 'Mar 2020 \u2013 Dec 2024', role: 'Director of Secretariat & Finance', org: 'Desamind Indonesia', oneLiner: 'Ran operations and finance for 6 divisions and 5+ yearly programs on IDR 600M+, and moved the whole foundation onto Google Workspace.', category: 'org' },
+  { period: 'Jan 2020 \u2013 Dec 2021', role: 'Research & Lab Assistant', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Co-built the patented AR-Manner app, published 3 papers, and ran lab sessions for 20 students across 4 courses.', category: 'ld', linkTo: 'ar-manner' },
   { period: 'Sep 2019 \u2013 Aug 2021', role: 'English Tutor', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Designed scaffolded English lessons for new university students.', category: 'edu' },
 ]
 
@@ -237,7 +238,8 @@ export const education = [
     flag: 'LPDP Scholar',
     year: 'Feb 2024 \u2013 Dec 2025',
     highlights: [
-      'Awarded for significantly enhanced campus culture, inclusion, and well-being within university community by Senior Vice-President of Monash Univeristy (2025)',
+      'Capstone: a community-based offline learning app, co-designed with Stanford D.school and Double Diamond',
+      'Campus Ambassador, recognised by the Senior Vice-President for strengthening campus culture, inclusion, and wellbeing (2025)',
     ],
     proof: 'https://drive.google.com/drive/folders/1RZBHumDP8xvnj2Ij4PP63QMc_-b8st1b?usp=sharing'
   },
@@ -248,7 +250,8 @@ export const education = [
     year: 'Aug 2018 \u2013 Oct 2022',
     highlights: [
       '1st Place, National 21st Century Learning Innovation Competition (2021)',
-      'Bangkit Academy (Google, Goto, Traveloka) \u2014 Cloud Computing specialisation',
+      'Bangkit Academy (Google, Gojek, Tokopedia, Traveloka) \u2014 Cloud Computing (2021)',
+      'Lab Assistant and English Tutor for 2 years each; Marketing Manager at the campus press (LPM)',
     ],
     proof: 'https://drive.google.com/drive/folders/1t_R3JBt_Tpuu-734--LnX8bSFGuTcWqD?usp=sharing'
   },
@@ -259,6 +262,7 @@ export const skills = {
     'ADDIE & Backward Design',
     'Training Needs Analysis',
     'Kirkpatrick Evaluation',
+    'Adult Learning & Training Delivery',
     'AR Development & Offline-First Design',
     'Stanford D.school / Double Diamond',
     'Python & Streamlit',
@@ -266,6 +270,7 @@ export const skills = {
   familiar: [
     'SAM (Successive Approximation)',
     'Gamification',
+    'Moodle LMS',
     'Canvas LMS',
     'Google Classroom',
     'HTML/CSS/JS',
@@ -345,5 +350,5 @@ export const contact = {
   ],
   openTo: ['Learning Designer', 'Instructional Designer', 'L&D Specialist', 'People Development', 'Training Specialist', 'HR Learning', 'Curriculum Designer'],
   phone: '+6285 11145 0852',
-  location: 'South Jakarta, Indonesia',
+  location: 'East Jakarta, Indonesia',
 }
