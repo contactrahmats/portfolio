@@ -25,14 +25,15 @@ export const hero = {
     { label: 'Resumé', href: 'https://drive.google.com/file/d/1-2igf2luJsMVtNlFo-W2X5kLxV7RHmle/view?usp=sharing', style: 'amber', external: true },
     { label: 'Contact', href: '#contact', style: 'ghost' },
   ],
-  credentials: ['MEd Digital Learning · Monash University', 'LPDP Scholar'],
+  credentials: ['Training Consultant · Alatan Asasta', 'MEd Digital Learning · Monash University', 'LPDP Scholar'],
 }
 
 export const about = {
   photo: img_personal, // TODO: replace with real photo import
   narrative: [
-    "I didn't start in learning design. I started in a classroom in a small city in Central Java, curious about why some students thrived and others quietly disappeared. That question followed me through an Informatics Engineering degree, into rural schools in Maluku where electricity ran six hours a day, and eventually to Monash University in Australia, where I spent two years studying exactly why learning breaks down and how to fix it.",
+    "I didn't start in learning design. I started in a classroom in a small city in Central Java, curious about why some students thrived and others quietly disappeared. That question followed me through an Informatics Engineering degree, into rural schools in Maluku where electricity ran 12 hours a day, and eventually to Monash University in Australia, where I spent two years studying exactly why learning breaks down and how to fix it.",
     'As an LPDP scholar, I came back to Indonesia because this is where the hardest, most important learning problems live, and I wanted to work on them.',
+    'Now I design training for adults who don’t have time to waste: government buyers and vendors learning procurement systems that change faster than the manuals do. In one month we ran 7 programs for 160+ people, and 95% walked out satisfied. Different room, same question I started with: why does learning stick for some people and not others?',
   ],
   credibilityPoints: [
     'MEd Digital Learning, Monash University, LPDP Scholar',
