@@ -20,14 +20,6 @@ export default function Contact() {
             >
               Email Me
             </a>
-            <a
-              href={contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full border-2 border-indigo text-indigo text-sm font-bold hover:bg-indigo/5 transition-colors"
-            >
-              LinkedIn
-            </a>
           </div>
 
           <div className="flex flex-wrap gap-4">
