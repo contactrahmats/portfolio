@@ -13,6 +13,7 @@ import edupulse from './edupulse.png'
 import pmdashboard from './pmdashboard.png'
 import ums from './ums.png'
 import campusambassadors from './campusambassadors.png'
+import epurchasing from './epurchasing.svg'
 
 
 export const hero = {
@@ -48,6 +49,35 @@ export const about = {
 // Featured / flagship case studies. Each renders as a horizontal preview card
 // that opens into a full scrolling-story modal with a sticky stage timeline.
 export const caseStudies = [
+  {
+    slug: 'e-purchasing',
+    title: 'Master E-Purchasing for Health Procurement',
+    org: 'Alatan Asasta Indonesia',
+    timeframe: '2026',
+    hook: 'Procurement officers wanted AI to do the work. In a field where the right answer depends on context, AI only helps if you give it that context.',
+    badges: ['+34% Post-Test', '4.67/5 Satisfaction'],
+    photo: epurchasing,
+    externalLink: null,
+    tags: ['Training Needs Analysis', 'Kirkpatrick L1–L2', 'AI-Assisted Practice', 'Hybrid Delivery', 'Adult Learning', 'Government Procurement'],
+    stages: [
+      {
+        label: 'Needs Analysis',
+        body: 'Health procurement officers buy everything from medical devices to medicines through E-Katalog V6, under rules that change faster than any manual can keep up with, and that shift depending on who’s buying, how much, and where. The 16 participants came from 9 government agencies, most of them joining online from outside Java: Sulawesi, Papua, Maluku, Kalimantan, Sumatra. What surprised me was what they asked for. Not more regulation slides. They wanted AI to make the job easier.',
+      },
+      {
+        label: 'Design',
+        body: 'That wish comes with a catch. In procurement, the right answer hangs on a threshold, a role, a region. Ask a generic AI and you get a confident, generic answer that can be wrong. So the practice sessions were built around giving AI the context it needs (the regulation, the agency’s own data, the specific case) and walking out with templates participants could use in their own office the next day. Seventeen sessions over two days, hybrid, from planning and method selection through negotiation to contracts.',
+      },
+      {
+        label: 'Delivery',
+        body: 'I ran the room as MC and moderator, with 11 of the 16 participants on Zoom. Not everything held. Connections dropped on day one, a mic battery died mid-session, and breaks slid off the rundown. We set up a dedicated connection overnight and kept the sessions moving. When it became clear participants already knew the basics, we shifted the simulation toward using AI to get real work done. Filling the room is part of the job too. Every public event passes a go/no-go check on registrations, and when another one fell short, I rescheduled it instead of forcing it through.',
+      },
+      {
+        label: 'Evaluation',
+        body: 'Among the 12 participants who took both tests, the average score rose from 18.4 to 24.8 out of 30, a 34% gain, and the number clearing the 70% bar went from 4 to 11. The biggest jumps were on authority and thresholds, from 33% to 92% correct. Satisfaction averaged 4.67 out of 5, and one participant said it was different from other trainings that only hand out material. The data also showed what didn’t land. The P.K.V framework and price references stayed weak, and two days was too short for the content. That’s the brief for the next version.',
+      },
+    ],
+  },
   {
     slug: 'babar-kalesang',
     title: 'Babar Kalesang',
@@ -219,7 +249,7 @@ export const selfInitiated = [
 
 // category: 'ld' | 'edu' | 'org' | 'tech' — drives the timeline dot color
 export const experience = [
-  { period: 'Sep 2026 \u2013 Present', role: 'Training Consultant', org: 'Alatan Asasta Indonesia', oneLiner: 'Designing procurement training for government and vendors, from needs analysis to evaluation. 7 programs, 160+ participants, 95% satisfaction in one month.', category: 'ld' },
+  { period: 'Sep 2026 \u2013 Present', role: 'Training Consultant', org: 'Alatan Asasta Indonesia', oneLiner: 'Designing procurement training for government and vendors, from needs analysis to evaluation. 7 programs, 160+ participants, 95% satisfaction in one month.', category: 'ld', linkTo: 'e-purchasing' },
   { period: 'Jun \u2013 Jul 2025', role: 'Campus Ambassador', org: 'Monash University', oneLiner: 'Welcomed hundreds of international visitors across 10+ events.', category: 'edu', linkTo: 'can' },
   { period: 'Mar \u2013 Jun 2025', role: 'Learning Designer', org: 'Monash Capstone', oneLiner: 'Designed an offline learning app achieving High Distinction.', category: 'ld', linkTo: 'monash-capstone' },
   { period: 'Jun 2022 \u2013 Dec 2023', role: 'Learning Developer & Trainer', org: 'Babar Kalesang', oneLiner: 'Built offline learning for island schools with no internet, reaching 300 to 500 students.', category: 'ld', linkTo: 'babar-kalesang' },

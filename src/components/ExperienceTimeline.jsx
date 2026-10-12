@@ -14,7 +14,7 @@ const LEGEND = [
   { key: 'tech', label: 'Technology' },
 ]
 
-const FLAGSHIP_SLUGS = ['babar-kalesang', 'monash-capstone', 'ar-manner']
+const FLAGSHIP_SLUGS = ['e-purchasing', 'babar-kalesang', 'monash-capstone', 'ar-manner']
 
 function handleTimelineClick(linkTo) {
   if (!linkTo) return
