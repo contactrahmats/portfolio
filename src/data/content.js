@@ -34,11 +34,12 @@ export const about = {
   narrative: [
     "I didn't start in learning design. I started in a classroom in a small city in Central Java, curious about why some students thrived and others quietly disappeared. That question followed me through an Informatics Engineering degree, into rural schools in Maluku where electricity ran 12 hours a day, and eventually to Monash University in Australia, where I spent two years studying exactly why learning breaks down and how to fix it.",
     'As an LPDP scholar, I came back to Indonesia because this is where the hardest, most important learning problems live, and I wanted to work on them.',
-    'Now I design training for adults who don’t have time to waste: government buyers and vendors learning procurement systems that change faster than the manuals do. In one month we ran 7 programs for 160+ people, and 95% walked out satisfied. Different room, same question I started with: why does learning stick for some people and not others?',
+    'Most recently I designed training for adults who don’t have time to waste: government buyers and vendors learning procurement systems that change faster than the manuals do. I designed and delivered 10+ programs for 180+ people, and 95% walked out satisfied. Different room, same question I started with: why does learning stick for some people and not others?',
   ],
   credibilityPoints: [
     'MEd Digital Learning, Monash University, LPDP Scholar',
-    '7 programs, 160+ participants, 95% satisfaction in a single month',
+    '10+ programs, 180+ participants, 95% satisfaction',
+    '34% higher post-test scores on a flagship two-day program',
     '300 to 500 students reached on islands with no internet',
     '3 peer-reviewed publications, 1 registered patent',
     'Frameworks: ADDIE, SAM, Kirkpatrick, Backward Design',
@@ -175,9 +176,9 @@ export const professionalWork = [
     title: 'Computational Thinking Curriculum',
     org: 'UMS \u00d7 Bebras Indonesia \u00b7 Feb\u2013Jun 2022',
     photo: lilininspirasi,
-    description: 'Took Bebras Indonesia\u2019s national Computational Thinking framework off the page and into 5 to 10 schools across Solo Raya, one weekly visit at a time. I designed the curriculum, then taught it myself.',
+    description: 'Took Bebras Indonesia\u2019s national Computational Thinking framework off the page and into up to 10 schools across Solo Raya, one weekly visit at a time. I designed the curriculum, then taught it myself.',
     tags: ['Curriculum Design', 'Inquiry-Based Learning', 'Facilitation'],
-    impact: '5\u201310 Schools \u00b7 National CT Framework Alignment',
+    impact: 'Up to 10 Schools \u00b7 National CT Framework Alignment',
     link: 'https://desamind.id/2022/05/11/desamind-indonesia-bersama-biro-bebras-universitas-muhammadiyah-surakarta-sukses-mengadakan-kelas-lilin-inspirasi/',
   },
   {
@@ -249,16 +250,16 @@ export const selfInitiated = [
 
 // category: 'ld' | 'edu' | 'org' | 'tech' — drives the timeline dot color
 export const experience = [
-  { period: 'Sep 2026 \u2013 Present', role: 'Training Consultant', org: 'Alatan Asasta Indonesia', oneLiner: 'Designing procurement training for government and vendors, from needs analysis to evaluation. 7 programs, 160+ participants, 95% satisfaction in one month.', category: 'ld', linkTo: 'e-purchasing' },
+  { period: 'Sep \u2013 Oct 2026', role: 'Training Consultant', org: 'Alatan Asasta Indonesia', oneLiner: 'Designed procurement training for government and vendors, from needs analysis to evaluation: 10+ programs, 180+ participants, 95% satisfaction. Built a self-paced Moodle course and initiated the company\u2019s LPPBJ accreditation.', category: 'ld', linkTo: 'e-purchasing' },
   { period: 'Jun \u2013 Jul 2025', role: 'Campus Ambassador', org: 'Monash University', oneLiner: 'Welcomed hundreds of international visitors across 10+ events.', category: 'edu', linkTo: 'can' },
   { period: 'Mar \u2013 Jun 2025', role: 'Learning Designer', org: 'Monash Capstone', oneLiner: 'Designed an offline learning app achieving High Distinction.', category: 'ld', linkTo: 'monash-capstone' },
-  { period: 'Jun 2022 \u2013 Dec 2023', role: 'Learning Developer & Trainer', org: 'Babar Kalesang', oneLiner: 'Built offline learning for island schools with no internet, reaching 300 to 500 students.', category: 'ld', linkTo: 'babar-kalesang' },
+  { period: 'Jun 2022 \u2013 Dec 2023', role: 'L&D Specialist & Trainer', org: 'Babar Kalesang', oneLiner: 'Built offline learning for island schools with no internet, reaching 300 to 500 students.', category: 'ld', linkTo: 'babar-kalesang' },
   { period: 'Oct 2022 \u2013 Aug 2023', role: 'Web Content Writer', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Maintained digital academic content for the university website.', category: 'org', linkTo: 'ums' },
-  { period: 'Feb \u2013 Jun 2022', role: 'Curriculum Designer & Tutor', org: 'CT Curriculum', oneLiner: 'Designed and taught a Computational Thinking curriculum in 5 to 10 schools.', category: 'ld', linkTo: 'ct' },
+  { period: 'Feb \u2013 Jun 2022', role: 'Trainer of Computational Thinking', org: 'UMS \u00d7 Bebras Indonesia', oneLiner: 'Designed and delivered a Computational Thinking curriculum across up to 10 schools, aligned to the national framework.', category: 'ld', linkTo: 'ct' },
   { period: 'Aug \u2013 Dec 2021', role: 'Team Lead & ICT Teacher', org: 'Ministry of Education', oneLiner: 'Led differentiated ICT instruction for Grades 4 to 6.', category: 'edu', linkTo: 'km' },
   { period: 'Feb \u2013 Jul 2021', role: 'Cloud Computing Capstone', org: 'Bangkit Academy', oneLiner: 'Built cloud infrastructure for an emergency response app.', category: 'tech' },
   { period: 'Mar 2020 \u2013 Dec 2024', role: 'Director of Secretariat & Finance', org: 'Desamind Indonesia', oneLiner: 'Ran operations and finance for 6 divisions and 5+ yearly programs on IDR 600M+, and moved the whole foundation onto Google Workspace.', category: 'org' },
-  { period: 'Jan 2020 \u2013 Dec 2021', role: 'Research & Lab Assistant', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Co-built the patented AR-Manner app, published 3 papers, and ran lab sessions for 20 students across 4 courses.', category: 'ld', linkTo: 'ar-manner' },
+  { period: 'Jan 2020 \u2013 Dec 2021', role: 'Research & Lab Assistant', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Co-built the patented AR-Manner app (tested with ~50 learners), published 3 peer-reviewed papers, and ran lab sessions for 20 students across 4 courses.', category: 'ld', linkTo: 'ar-manner' },
   { period: 'Sep 2019 \u2013 Aug 2021', role: 'English Tutor', org: 'Universitas Muhammadiyah Surakarta', oneLiner: 'Designed scaffolded English lessons for new university students.', category: 'edu' },
 ]
 
@@ -379,6 +380,6 @@ export const contact = {
     { label: 'Github', href: 'https://github.com/contactrahmats' },
   ],
   openTo: ['Learning Designer', 'Instructional Designer', 'L&D Specialist', 'People Development', 'Training Specialist', 'HR Learning', 'Curriculum Designer'],
-  phone: '+6285 11145 0852',
+  phone: '+62 851 1145 0852',
   location: 'East Jakarta, Indonesia',
 }
