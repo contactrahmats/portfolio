@@ -308,6 +308,7 @@ export const skills = {
     'HTML/CSS/JS',
     'Figma',
     'Canva',
+    'Video Editing (CapCut, VN, Final Cut Pro)',
     'GitHub',
     'Google Cloud',
     'Google Workspace (Admin)',
