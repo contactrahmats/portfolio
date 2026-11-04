@@ -314,6 +314,7 @@ export const skills = {
     'Google Workspace (Admin)',
     'Microsoft Office',
     'Project & Stakeholder Management',
+    'Notion & ClickUp',
     'Agile Facilitation',
     'Public Speaking',
   ],
