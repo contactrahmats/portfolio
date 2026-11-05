@@ -1,21 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { professionalWork, selfInitiated } from '../data/content'
+import { closeItem, openItem, projectSlug, useOpenSlug } from '../lib/view'
 import HorizontalScrollRow from './HorizontalScrollRow'
 import ProjectCard from './ProjectCard'
 import ProjectModal from './ProjectModal'
 
 export default function Projects() {
-  const [active, setActive] = useState(null) // { project, kind }
+  // Each open project gets its own URL (/project/<slug>) so it shows up in Analytics.
+  const openSlug = useOpenSlug('project')
+  const all = [...professionalWork, ...selfInitiated]
+  const openProject = openSlug ? all.find((p) => projectSlug(p) === openSlug) : null
+  const active = openProject
+    ? { project: openProject, kind: professionalWork.includes(openProject) ? 'professional' : 'self' }
+    : null
+  const setActive = ({ project }) => openItem('project', projectSlug(project))
 
   useEffect(() => {
     const handler = (e) => {
       const slug = e.detail?.slug
       if (!slug) return
-      const found = [...professionalWork, ...selfInitiated].find((p) => p.slug === slug)
-      if (found) {
-        const kind = professionalWork.includes(found) ? 'professional' : 'self'
-        setActive({ project: found, kind })
-      }
+      const found = [...professionalWork, ...selfInitiated].find(
+        (p) => p.slug === slug || projectSlug(p) === slug
+      )
+      if (found) setActive({ project: found })
     }
     window.addEventListener('open-project', handler)
     return () => window.removeEventListener('open-project', handler)
@@ -65,7 +72,7 @@ export default function Projects() {
       </div>
 
       {active && (
-        <ProjectModal project={active.project} kind={active.kind} onClose={() => setActive(null)} />
+        <ProjectModal project={active.project} kind={active.kind} onClose={closeItem} />
       )}
     </section>
   )

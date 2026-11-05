@@ -35,3 +35,16 @@ npm run dev
 ## Deployment
 
 Deployed on Vercel, auto-builds on push to `main`.
+
+## Analytics links
+
+Vercel Web Analytics (Hobby) only counts page views per URL, so the site gives
+measurable actions their own URLs (see `src/lib/view.js`):
+
+- `/work/<slug>` – a featured case study was opened (also a shareable deep link)
+- `/project/<slug>` – a project card was opened
+- `/cl`, `/cv`, `/glints`, `/jobstreet`, `/indeed`, `/wa` – tagged entry links for
+  cover letters, the resume, job platforms and WhatsApp. They open the homepage and
+  show up as their own row in Analytics → Pages.
+
+`vercel.json` rewrites all paths to `index.html` so these URLs load directly.

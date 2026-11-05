@@ -1,9 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { caseStudies } from '../data/content'
+import { closeItem, openItem, useOpenSlug } from '../lib/view'
 import CaseStudyModal from './CaseStudyModal'
 
+// Each open case study gets its own URL (/work/<slug>) so it shows up in Analytics.
+const setOpenIndex = (i) => openItem('work', caseStudies[i]?.slug)
+
 export default function CaseStudies() {
-  const [openIndex, setOpenIndex] = useState(null)
+  const openSlug = useOpenSlug('work')
+  const found = caseStudies.findIndex((cs) => cs.slug === openSlug)
+  const openIndex = found === -1 ? null : found
 
   // allow other sections (e.g. Experience Timeline) to deep-link into a case study
   useEffect(() => {
@@ -88,7 +94,7 @@ export default function CaseStudies() {
       {openIndex !== null && (
         <CaseStudyModal
           index={openIndex}
-          onClose={() => setOpenIndex(null)}
+          onClose={closeItem}
           onNavigate={(i) => setOpenIndex(i)}
         />
       )}

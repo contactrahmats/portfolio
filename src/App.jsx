@@ -11,8 +11,11 @@ import Skills from './components/Skills'
 import Publications from './components/Publications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { useView } from './lib/view'
 
 export default function App() {
+  // route groups pages in Analytics (e.g. /work/[slug]); path is the exact page
+  const view = useView()
   return (
     <>
       <Navbar />
@@ -26,7 +29,7 @@ export default function App() {
       <Publications />
       <Contact />
       <Footer />
-      <Analytics />
+      <Analytics route={view.route} path={view.path} />
       <SpeedInsights />
     </>
   )
